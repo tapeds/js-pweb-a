@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      function validationFunction() {
+        var name = document.myform.nama.value;
+        var nim = document.myform.nim.value;
+        var kelas = document.myform.matkul.value;
+        var guru = document.myform.dosen.value;
+
+        if (name == null || name == "") {
+          alert("Nama tidak boleh kosong");
+        } else if (nim == null || nim == "") {
+          alert("NIM tidak boleh kosong");
+        } else if (kelas == null || kelas == "") {
+          alert("Mata Kuliah tidak boleh kosong");
+        } else if (guru == null || guru == "") {
+          alert("Dosen tidak boleh kosong");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <section><h1>Form Database Mahasiswa</h1></section>
+    <form
+      name="myform"
+      autocomplete="off"
+      onsubmit="return validationFunction()"
+    >
+      <div class="box">
+        <label>Masukkan Nama Mahasiswa:</label>
+        <input placeholder="Masukkan Nama" id="input" name="nama" />
+        <ul class="list"></ul>
+      </div>
+      <div class="box">
+        <label>Masukkan NIM Mahasiswa:</label>
+        <input placeholder="Masukkan NIM" id="nim" />
+      </div>
+      <div class="box">
+        <label>Masukkan Mata Kuliah Mahasiswa:</label>
+        <input placeholder="Masukkan Mata Kuliah" id="matkul" />
+      </div>
+      <div class="box">
+        <label>Masukkan Nama Dosen:</label>
+        <input placeholder="Masukkan Dosen" id="input" name="dosen" />
+        <ul class="list"></ul>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

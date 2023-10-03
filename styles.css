@@ -1,0 +1,71 @@
+body {
+  height: max-content;
+  width: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 100px;
+  padding-top: 25px;
+}
+
+body h1 {
+  font-size: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 40px 50px;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+form div input {
+  padding: 5px;
+}
+
+form div label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+form ul {
+  list-style: none;
+}
+
+form .list {
+  width: 70%;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+form .list-items {
+  padding: 10px 5px;
+}
+
+form .list-items:hover {
+  background-color: #ddd;
+}
+
+form button {
+  width: 100px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: indigo;
+  color: white;
+  border: none;
+}
+
+form button:hover {
+  background-color: #4b4482;
+  cursor: pointer;
+}
